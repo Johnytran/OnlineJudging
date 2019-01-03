@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+<!--    header-->
+    <div class="container dashboard">
+      <div class="row">
+        <div class="col-4 left-panel">
+          <div class="row">
+            <div class="col">
+              <h3>JUDGING</h3>
+            </div>
+          </div>
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/dashboard.png"/> Dashboard</p>
+            </div>
+          </div>
+<!--          group judge-->
+            <div class="row">
+              <div class="col">
+                <h4>JUDGE</h4>
+              </div>
+            </div>
+
+            <div class="row dash">
+              <div class="col">
+                <p><img src="images/template/invite-judge.png"/> Invite Judge</p>
+              </div>
+            </div>
+
+            <div class="row dash">
+              <div class="col">
+                <p><img src="images/template/judge-management.png"/> Judge Management</p>
+              </div>
+            </div>
+<!--          group event-->
+          
+          <div class="row">
+            <div class="col">
+              <h4>EVENT</h4>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/add-event.png"/> Add Event</p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/update-event.png"/> Update Event</p>
+            </div>
+          </div>
+          
+<!--          group categories-->
+          <div class="row">
+            <div class="col">
+              <h4>EVENT</h4>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/add-category.png"/> Add Category</p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/update-category.png"/> Update Category</p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/criteria-management.png"/> Criteria Management</p>
+            </div>
+          </div>
+          
+<!--          project group-->
+          <div class="row">
+            <div class="col">
+              <h4>PROJECT</h4>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/add-project.png"/> Add Project</p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/update-project.png"/> Update Project</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-8">
+      <!--            task-bar-->
+          <div class="row header-bar">
+            <div class="col-2 logo-container">
+              JUDGING
+            </div>
+            <div class="col-10 header-user justify-content-end row">
+                <div class="box" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<a href=''>Sign out</a>">
+                  <img src="images/template/user.jpeg" />
+                </div>
+            </div>
+          </div>  
+      <!--            content-->
+          <div class="row">
+            <div class="col-8 dash-content">
+<!--              row 1-->
+              <div class="row">
+                <div class="col-6">
+                  <div class="col-md-12 total-users box-content">
+                    <div class="row">
+                      <h5>Total Users</h5>
+                      <p>100</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-6">
+                  <div class="col-md-12 marked-projects box-content">
+                    <div class="row">
+                      <h5>Marked Projects</h5>
+                      <p>20/100</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+<!--              row 2-->
+              <div class="row">
+                <div class="col-6">
+                  <div class="col-md-12 current-event box-content">
+                    <div class="row">
+                      <h5>Current Event</h5>
+                      <p>5</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="col-4 right-panel">
+              <h5>Notifications</h5>
+              <div class="line">
+                <p>
+                  <b>New event has been created</b>
+                </p>
+                <small>2 min ago</small>
+              </div>
+              <div class="line">
+                <p>
+                  Keving has been granted as a judge
+                </p>
+                <small>2 min ago</small>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+   
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover({
+            html: true
+          })
+      })
+    </script>
+  </body>
+</html>
