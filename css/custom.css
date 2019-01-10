@@ -327,7 +327,20 @@ a {
 
 /*UPDATE PROJECT*/
 .col.project{
-  background-color: grey;
+  background-color: #D9D7D4;
   border-radius: 2px;
   padding: 9px;
+}
+
+.invite-judge-form{
+  margin: 20px 0 0;
+}
+.invite-judge-form button[type="submit"]{
+  width: 100%;
+  border: 0;
+  background: #34383c;
+}
+.invite-judge-form h3{
+  text-align: left;
+  margin: 0 0 20px;
 }
