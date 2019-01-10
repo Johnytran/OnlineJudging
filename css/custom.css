@@ -344,3 +344,12 @@ a {
   text-align: left;
   margin: 0 0 20px;
 }
+.dashboard .manage-judge h3{
+  text-align: left;
+}
+.dashboard .manage-judge img{
+  width: 100%;
+}
+.manage-judge-detail-form{
+  padding: 20px 0;
+}

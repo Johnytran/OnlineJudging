@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>Invite Judge</title>
+    <title>Manage Judge</title>
   </head>
   <body>
 <!--    header-->
@@ -41,7 +41,7 @@
 
             <div class="row dash">
               <div class="col">
-                <p><img src="images/template/judge-management.png"/> <a href="mangage-judge">Manage Judge</a></p>
+                <p><img src="images/template/judge-management.png"/> <a href="manage-judge.html">Manage Judge</a></p>
               </div>
             </div>
 <!--          group event-->
@@ -123,19 +123,62 @@
           </div>  
       <!--            content-->
           <div class="row">
-            <div class="col-8 dash-content invite-judge">
-                <form class="invite-judge-form">
-                  <h3>Invite Judge</h3>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    
-                  </div>
-                  
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              
+            <div class="col-8 dash-content manage-judge">
 
+              <div class="row">
+                <div class="col">
+                  <h3>Manage Judge</h3>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col">
+                  <form class="manage-judge-detail-form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="col-lg-2">Category</label>
+                      <select name="ddlCategories" id="ddlCategories" class="btn btn-secondary dropdown-toggle col-lg-8">
+                      	<option selected="selected" value="11">Best Animation</option>
+                      	<option value="12">Best Cinematography</option>
+                      	<option value="13">Best Director</option>
+                      	<option value="14">Best Film</option>
+                      	<option value="15">Best Editor</option>
+                      	<option value="16">Best Screenplay (unproduced)</option>
+                      	<option value="17">Best Sound Design</option>
+                      	<option value="18">Best Documentary</option>
+                      	<option value="19">Best Production Design</option>
+                      
+                      </select>
+                    </div>
+                    
+                    
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-dark list-group-item-action active">
+                        User To Judge
+                      </a>
+                      <div class="col-5">
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      
+                      <div class="col-5">
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                  </form>
+                </div>
+              </div>
               
             </div>
             <div class="col-4 right-panel">
