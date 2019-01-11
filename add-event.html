@@ -7,9 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>Manage Judge</title>
+    <title>Add Event</title>
   </head>
   <body>
 <!--    header-->
@@ -123,48 +124,63 @@
           </div>  
       <!--            content-->
           <div class="row">
-            <div class="col-8 dash-content manage-judge">
+            <div class="col-8 dash-content add-event">
+              
               <div class="row">
                 <div class="col">
-                  <h3>Manage Judge</h3>
+                  <h3>Add Event</h3>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col">
+                    <form class="add-event-form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Start Date</label>
+                            <input type="text" class="form-control datepicker">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-2"> 
+                        
+                        </div>
+                        <div class="col-lg-5">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">End Date</label>
+                            <input type="text" class="form-control datepicker">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Address</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      
+                      <div class="form-group row">
+                        <label for="exampleInputEmail1" class="col-3">File upload</label>
+                        <input type="file" class="form-control col-8">
+                      </div>
+                      
+                      <div class="form-group row">
+                        <label  class="col-2 labelActive">Active</label>
+                        <input type="checkbox" class="form-control col-8">
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary">Add Event</button>
+                    </form>
+                  </div>
                 </div>
               </div>
               
-<!--              row 1-->
-              <div class="row">
-                <div class="col-6">
-                  <div class="col-md-12 total-users box-content">
-                    <div class="row">
-                      <h5>.INK</h5>
-                      <p><a href="manage-judge-detail.html"><img src="images/slides/slide1.jpg"/></a></p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="col-6">
-                  <div class="col-md-12 marked-projects box-content">
-                    <div class="row">
-                      <h5>DESIGN AWARD 2019</h5>
-                      <p><a href="manage-judge-detail.html"><img src="images/slides/slide2.jpg"/></a></p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-              
-<!--              row 2-->
-              <div class="row">
-                <div class="col-6">
-                  <div class="col-md-12 current-event box-content">
-                    <div class="row">
-                      <h5>UX DESIGN AWARD</h5>
-                      <p><a href="manage-judge-detail.html"><img src="images/slides/slide3.jpg"/></a></p>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-              </div>
               
             </div>
             <div class="col-4 right-panel">
@@ -197,11 +213,17 @@
     <script src="js/custom.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
     <script>
       $(function () {
         $('[data-toggle="popover"]').popover({
             html: true
-          })
+          });
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+            todayHighlight: true
+        });
       })
     </script>
   </body>

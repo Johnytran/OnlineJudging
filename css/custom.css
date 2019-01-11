@@ -353,3 +353,72 @@ a {
 .manage-judge-detail-form{
   padding: 20px 0;
 }
+.manage-judge-detail-form .list-group{
+  border-radius: 5px 5px 0 0;
+  border: 1px solid;
+}
+.manage-judge-detail-form .list-group h5{
+  text-align: center;
+}
+.manage-judge-detail-form .list-group .group-content{
+  padding: 10px;
+}
+.manage-judge-detail-form .list-group select{
+  height: 300px;
+}
+.manage-judge-detail-form .list-group .button-select{
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.manage-judge-detail-form .list-group option{
+  overflow: hidden;
+  padding: 4px;
+  margin: 5px 0;
+}
+.manage-judge-detail-form .list-group option:nth-child(even) {
+  background: #f0f5f1;
+  
+}
+.manage-judge-detail-form .list-group option:nth-child(odd) {
+  background: #e3f1f7;
+  
+}
+#ddlCategories{
+  height: 40px;
+}
+.dash-content h3{
+  text-align: left;
+}
+.add-event-form{
+  margin: 20px 0;
+}
+.table-condensed{
+  background: #e1e4dd;
+}
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled]{
+  background-color: #73afa9;
+}
+.datepicker table tr td.active{
+  background: #73afa9;
+}
+.datepicker table tr td.today{
+  background: #a2bcd6;
+}
+input.datepicker{
+  background: #ccc;
+}
+input[type="file"]{
+  border: 0;
+  padding: 0;
+}
+.labelActive{
+  display: flex;
+  align-items: center;
+}
+.add-event-form button[type="submit"]{
+  width: 100%;
+  background: #ccc;
+  border: 0;
+  color: #000;
+}
