@@ -35,13 +35,13 @@
 
             <div class="row dash">
               <div class="col">
-                <p><img src="images/template/invite-judge.png"/> Invite Judge</p>
+                <p><img src="images/template/invite-judge.png"/> <a href="invite-judge">Invite Judge</a></p>
               </div>
             </div>
 
             <div class="row dash">
               <div class="col">
-                <p><img src="images/template/judge-management.png"/> Judge Management</p>
+                <p><img src="images/template/judge-management.png"/> <a href="manage-judge.html">Manage Judge</a></p>
               </div>
             </div>
 <!--          group event-->
@@ -54,7 +54,7 @@
           
           <div class="row dash">
             <div class="col">
-              <p><img src="images/template/add-event.png"/> Add Event</p>
+              <p><img src="images/template/add-event.png"/> <a href="add-event.html">Add Event</a></p>
             </div>
           </div>
           
@@ -73,13 +73,13 @@
           
           <div class="row dash">
             <div class="col">
-              <p><img src="images/template/add-category.png"/> Add Category</p>
+              <p><img src="images/template/add-category.png"/> <a href="add-category.html">Add Category</a></p>
             </div>
           </div>
           
           <div class="row dash">
             <div class="col">
-              <p><img src="images/template/update-category.png"/> Update Category</p>
+              <p><img src="images/template/update-category.png"/> <a href="update-category.html">Update Category</a></p>
             </div>
           </div>
           
@@ -98,13 +98,13 @@
           
           <div class="row dash">
             <div class="col">
-              <p><img src="images/template/add-project.png"/> Add Project</p>
+              <p><img src="images/template/add-project.png"/> <a href="add-project.html">Add Project</a></p>
             </div>
           </div>
           
           <div class="row dash">
             <div class="col">
-              <p><img src="images/template/update-project.png"/><a href="update-project.html">Update Project</a></p>
+              <p><img src="images/template/update-project.png"/> <a href="update-project.html">Update Project</a></p>
             </div>
           </div>
           
@@ -113,7 +113,7 @@
       <!--            task-bar-->
           <div class="row header-bar">
             <div class="col-5 logo-container">
-              UPDATE PROJECT
+              CREATE CATEGORY
             </div>
             <div class="col-7 header-user justify-content-end row">
                 <div class="box" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<a href=''>Sign out</a>">
@@ -126,74 +126,54 @@
             <div class="col dash-content">
               <form class="add-project-form">
                 <div class="row">
-                   <div class="col project table-bordered">List of Projects</div>
+                   <div class="col project table-bordered">Create Category</div>
                 </div>
             <div class="row">
-                   <div class="col table-bordered">
-                       <div class="row">
-                         
-                         <div class="form-group">
-                      <label for="exampleInputEmail1" class="col-lg-8">Show</label>
-                      <select name="ddlCategories" id="ddlCategories" class="dropdown-toggle col-lg-8">
-                      	<option selected="selected" value="11">10</option>
-                      	<option value="12">20</option>
-                      	<option value="13">30</option>
-                      	<option value="14">50</option>
-                      	<option value="15">All</option>
-                      	
-                      </select>
+                  <div class="col dash-content">
+              <form class="add-project-form">
+                <div class="row">
+                  <div class="col-9">
+                     <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control">
                     </div>
-                       </div>
-                      <div class="row">
-  <div class="col table-bordered">Project ID</div>
-  <div class="col table-bordered">Title</div>
-  <div class="col table-bordered">Description</div>
-  <div class="col table-bordered">Category</div>
-  <div class="col table-bordered"></div>
-  <div class="col table-bordered"></div>
-</div> 
-                        <div class="row">
-  <div class="col table-bordered">1</div>
-  <div class="col table-bordered">Silence between the notes</div>
-  <div class="col table-bordered"></div>
-  <div class="col table-bordered">Best Film</div>
-  <div class="col table-bordered">
-    <button type="button" class="btn btn-primary">Update</button>
+                   
+                    <div class="form-group row">
+                      <label class="col-sm-2 col-form-label">Event</label>
+                      <div class="col-sm-2">
+                        <select class="form-control" id="event-select">
+                          <option>.INK</option>
+                          <option>DESIGN AWARD 2019</option>
+                          <option>UX DESIGN AWARD</option>
+                          
+                        </select>
+                      </div>
+                    </div>
     
-    </div>
-  <div class="col table-bordered">
-  
-  <button type="button" class="btn btn-danger">Delete</button></div>
-</div> 
-
-
-  <div class="row">
-  <div class="col table-bordered">2</div>
-  <div class="col table-bordered">Painting August</div>
-  <div class="col table-bordered"></div>
-  <div class="col table-bordered">Best Film</div>
-  <div class="col table-bordered">
-    <button type="button" class="btn btn-primary">Update</button>
-    
-    </div>
-  <div class="col table-bordered">
-  
-  <button type="button" class="btn btn-danger">Delete</button></div>
-</div> 
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                   </div>
+                    
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">File Upload</label>
+                      <div class="col-sm-9">
+                        <input type="file" class="form-control-file">
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-3"></div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">Add Category</button>
+                    
+                  </div>
+                </div>
+                
+                
+              </form>
+             
+                
+            </div>
+              
                 </div>
               </form>
              
