@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>Dashboard</title>
+    <title>Add Criteria</title>
   </head>
   <body>
 <!--    header-->
     <div class="container-fluid dashboard">
       <div class="row">
-        <div class="col-3 left-panel">
+        <div class="col-lg-3 left-panel">
           <div class="row">
             <div class="col">
               <h3><a href="index.html">JUDGING</a></h3>
@@ -109,7 +109,7 @@
           </div>
           
         </div>
-        <div class="col-9">
+        <div class="col-lg-9">
       <!--            task-bar-->
           <div class="row header-bar">
             <div class="col-2 logo-container">
@@ -124,41 +124,105 @@
       <!--            content-->
           <div class="row">
             <div class="col-8 dash-content">
-<!--              row 1-->
               <div class="row">
-                <div class="col-6">
-                  <div class="col-md-12 total-users box-content">
-                    <div class="row">
-                      <h5>Total Users</h5>
-                      <p>100</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="col-6">
-                  <div class="col-md-12 marked-projects box-content">
-                    <div class="row">
-                      <h5>Marked Projects</h5>
-                      <p>20/100</p>
-                    </div>
-                  </div>
-                  
+                <div class="col">
+                  <h3>Add Criteria</h3>
                 </div>
               </div>
-              
-<!--              row 2-->
-              <div class="row">
-                <div class="col-6">
-                  <div class="col-md-12 current-event box-content">
-                    <div class="row">
-                      <h5>Current Event</h5>
-                      <p>5</p>
+              <form class="add-event-form">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label>Category</label>
+                      <select name="ddlCategory" id="ddlCategory" class="form-control">
+                      	<option value="11">Best Animation</option>
+                      	<option value="12">Best Cinematography</option>
+                      	<option value="13">Best Director</option>
+                      	<option value="14">Best Film</option>
+                      	<option value="15">Best Editor</option>
+                      	<option value="16">Best Screenplay (unproduced)</option>
+                      	<option value="17">Best Sound Design</option>
+                      	<option value="18">Best Documentary</option>
+                      	<option value="19">Best Production Design</option>
+                      </select>      
                     </div>
                   </div>
-                  
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label>Criteria</label>
+                      <input type="text" name="criteria" class="form-control"/>     
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="alert alert-secondary"> 
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Rating</label>
+                                  <input type="text" name="criteria" class="form-control"/>     
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Point</label>
+                                  <input type="text" name="criteria" class="form-control"/>     
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><button class="btn btn-secondary form-control">Add</button></p>
+                    </div>
                 </div>
                 
-              </div>
+                <div class="row">
+                  <div class="col">
+                    <table class="table table-bordered table-hover" style="width:100%">
+                      <thead class="thead-light">
+                        <tr style="font-size:13px;">
+                           <th scope="col">Criteria</th>
+                           <th scope="col">Ratings</th>
+                           <th scope="col">Points</th>
+                           
+                        </tr>
+                      </thead>
+                      <tbody id="MainContent_rubricTB">
+                        <tr>
+                           <th scope="row" style="font-size:13px;">Quality of animation</th>
+                           <td>
+                              <table class="table table-bordered">
+                                 <tbody>
+                                    <tr>
+                                       <td></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                           <td style="font-size:11px;">0</td>
+                           
+                        </tr>
+                        
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col">
+                    <a href="add-criteria.html" class="btn btn-secondary btn btn-secondary btn-block">Save</a>
+                  </div>
+                </div>
+              </form>
               
             </div>
             <div class="col-4 right-panel">

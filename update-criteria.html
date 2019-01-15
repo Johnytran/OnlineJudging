@@ -9,19 +9,18 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 
-    <title>Manage Judge</title>
+    <title>Update Criteria</title>
   </head>
   <body>
 <!--    header-->
     <div class="container-fluid dashboard">
       <div class="row">
-  <div class="col-3 left-panel">
+        <div class="col-lg-3 left-panel">
           <div class="row">
             <div class="col">
               <h3><a href="index.html">JUDGING</a></h3>
             </div>
           </div>
-          
           <div class="row dash">
             <div class="col">
               <p><img src="images/template/dashboard.png"/> <a href="dashboard.html">Dashboard</a></p>
@@ -110,7 +109,7 @@
           </div>
           
         </div>
-        <div class="col-9">
+        <div class="col-lg-9">
       <!--            task-bar-->
           <div class="row header-bar">
             <div class="col-2 logo-container">
@@ -124,21 +123,19 @@
           </div>  
       <!--            content-->
           <div class="row">
-            <div class="col-8 dash-content manage-judge">
-
+            <div class="col-8 dash-content">
               <div class="row">
                 <div class="col">
-                  <h3>Manage Judge</h3>
+                  <h3>Update Criteria</h3>
                 </div>
               </div>
-              
-              <div class="row">
-                <div class="col">
-                  <form class="manage-judge-detail-form">
+              <form class="add-event-form">
+                <div class="row">
+                  <div class="col">
                     <div class="form-group">
-                      <label for="exampleInputEmail1" class="col-lg-2">Category</label>
-                      <select name="ddlCategories" id="ddlCategories" class="dropdown-toggle col-lg-8">
-                      	<option selected="selected" value="11">Best Animation</option>
+                      <label>Category</label>
+                      <select name="ddlCategory" id="ddlCategory" class="form-control">
+                      	<option value="11">Best Animation</option>
                       	<option value="12">Best Cinematography</option>
                       	<option value="13">Best Director</option>
                       	<option value="14">Best Film</option>
@@ -147,66 +144,107 @@
                       	<option value="17">Best Sound Design</option>
                       	<option value="18">Best Documentary</option>
                       	<option value="19">Best Production Design</option>
-                      
-                      </select>
+                      </select>      
                     </div>
-                    
-                    
-                    <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-dark list-group-item-action active">
-                        User To Judge
-                      </a>
-                      <div class="group-content">
-                        <div class="row">
-                          <div class="col-5">
-                            <h5>User</h5>
-                          </div>
-                          <div class="col-2"></div>
-                          <div class="col-5">
-                            <h5>Judge</h5>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-5">
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                              <option>pamela.b_old</option>
-                              <option>adrienne.patrick@ait.edu.au_old</option>
-                              <option>TheTextileHub_old</option>
-                              <option>nik_old</option>
-                              <option>Evan.n_old</option>
-                              <option>paul@productionartdepartment.com_old</option>
-                              <option>holt_old</option>
-                              <option>Sharon Sanders_old</option>
-                              <option>charles@designawards.net.au_old</option>
-                              <option>PSheehan_old</option>
-                              
-                            </select>
-                          </div>
-                          <div class="col-2 button-select justify-content-md-center">
-                            <div>
-                              <p><button type="button" class="btn btn-secondary">></button></p>
-                              <p><button type="button" class="btn btn-secondary"><</button></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label>Criteria</label>
+                      <input type="text" name="criteria" class="form-control" value="Quality of animation"/>     
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="alert alert-secondary"> 
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Rating</label>
+                                  <input type="text" name="criteria" class="form-control"/>     
+                                </div>
+                              </div>
                             </div>
                             
-                          </div>
-                          <div class="col-5">
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                              <option>krissm</option>
-                              <option>sharon.sanders@ait.nsw.edu.au</option>
-                              <option>Nik</option>
-                              <option>Sandra</option>
-                              
-                            </select>
-                          </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Point</label>
+                                  <input type="text" name="criteria" class="form-control"/>     
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                      </div>
-                      
-                     
-                    </div>
-                    
-                  </form>
+                    </div>    
                 </div>
-              </div>
+                <div class="row">
+                    <div class="col">
+                        <p><button class="btn btn-secondary form-control">Add</button></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col">
+                    <table class="table table-bordered table-hover" style="width:100%">
+                      <thead class="thead-light">
+                        <tr style="font-size:13px;">
+                           <th scope="col">Criteria</th>
+                           <th scope="col">Ratings</th>
+                           <th scope="col">Points</th>
+                           
+                        </tr>
+                      </thead>
+                      <tbody id="MainContent_rubricTB">
+                        <tr>
+                           <th scope="row" style="font-size:13px;">Quality of animation</th>
+                           <td>
+                              <table class="table table-bordered">
+                                 <tbody>
+                                    <tr>
+                                       <td style="font-size:11px;">
+                                           <p><span class="delete-rating"> x</span></p>
+                                           <p>Animation quality is of a poor standard.</p>
+                                       </td>
+                                       <td style="font-size:11px;">
+                                            <p><span class="delete-rating"> x</span></p>
+                                            <p>Animation potential is not fully taken advantage of. Some movements are minimal
+                                          and in areas not convincing.</p>
+                                          
+                                       </td>
+                                       <td style="font-size:11px;">
+                                           <p><span class="delete-rating"> x</span></p>
+                                           <p>Animation is very consistent and well done. It is an acceptable standard. There may be some style breaking with the use of a shortcut.</p>
+                                           
+                                       </td>
+                                       <td style="font-size:11px;">
+                                           <p><span class="delete-rating"> x</span></p>
+                                           <p>Animation is of a high standard. Very solid use of principles. A great example of animation well done.</p>
+                                        </td>
+                                       <td style="font-size:11px;">
+                                           <p><span class="delete-rating"> x</span></p>
+                                           <p>Animation is of a very high standard. There are many uses of principles throughout. It has a very strong artistic flair and imitates life brilliantly.</p>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                           <td style="font-size:11px;">40.0</td>
+                           
+                        </tr>
+                        
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col">
+                    <a href="add-criteria.html" class="btn btn-secondary btn btn-secondary btn-block">Save</a>
+                  </div>
+                </div>
+              </form>
               
             </div>
             <div class="col-4 right-panel">

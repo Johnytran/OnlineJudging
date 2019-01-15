@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Criteria Management</title>
+  </head>
+  <body>
+<!--    header-->
+    <div class="container-fluid dashboard">
+      <div class="row">
+        <div class="col-lg-3 left-panel">
+          <div class="row">
+            <div class="col">
+              <h3><a href="index.html">JUDGING</a></h3>
+            </div>
+          </div>
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/dashboard.png"/> <a href="dashboard.html">Dashboard</a></p>
+            </div>
+          </div>
+<!--          group judge-->
+            <div class="row">
+              <div class="col">
+                <h4>JUDGE</h4>
+              </div>
+            </div>
+
+            <div class="row dash">
+              <div class="col">
+                <p><img src="images/template/invite-judge.png"/> <a href="invite-judge.html">Invite Judge</a></p>
+              </div>
+            </div>
+
+            <div class="row dash">
+              <div class="col">
+                <p><img src="images/template/judge-management.png"/> <a href="manage-judge.html">Manage Judge</a></p>
+              </div>
+            </div>
+<!--          group event-->
+          
+          <div class="row">
+            <div class="col">
+              <h4>EVENT</h4>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/add-event.png"/> <a href="add-event.html">Add Event</a></p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/update-event.png"/><a href="update-event.html"> Update Event</a></p>
+            </div>
+          </div>
+          
+<!--          group categories-->
+          <div class="row">
+            <div class="col">
+              <h4>EVENT</h4>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/add-category.png"/><a href="add-category.html">Add Category</a></p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/update-category.png"/> <a href="update-category.html">Update Category</a></p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/criteria-management.png"/><a href="criteria-management.html">Criteria Management</a></p>
+            </div>
+          </div>
+          
+<!--          project group-->
+          <div class="row">
+            <div class="col">
+              <h4>PROJECT</h4>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/add-project.png"/> <a href="add-project.html">Add Project</a></p>
+            </div>
+          </div>
+          
+          <div class="row dash">
+            <div class="col">
+              <p><img src="images/template/update-project.png"/> <a href="update-project.html">Update Project</a></p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-9">
+      <!--            task-bar-->
+          <div class="row header-bar">
+            <div class="col-2 logo-container">
+              JUDGING
+            </div>
+            <div class="col-10 header-user justify-content-end row">
+                <div class="box" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<a href=''>Sign out</a>">
+                  <img src="images/template/user.jpeg" />
+                </div>
+            </div>
+          </div>  
+      <!--            content-->
+          <div class="row">
+            <div class="col-8 dash-content">
+              <div class="row">
+                <div class="col">
+                  <h3>Criteria Managment</h3>
+                </div>
+              </div>
+              <form class="add-event-form">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label>Category</label>
+                      <select name="ddlCategory" id="ddlCategory" class="form-control">
+                      	<option value="11">Best Animation</option>
+                      	<option value="12">Best Cinematography</option>
+                      	<option value="13">Best Director</option>
+                      	<option value="14">Best Film</option>
+                      	<option value="15">Best Editor</option>
+                      	<option value="16">Best Screenplay (unproduced)</option>
+                      	<option value="17">Best Sound Design</option>
+                      	<option value="18">Best Documentary</option>
+                      	<option value="19">Best Production Design</option>
+                      </select>      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col">
+                    <table class="table table-bordered table-hover" style="width:100%">
+                      <thead class="thead-light">
+                        <tr style="font-size:13px;">
+                           <th scope="col">Criteria</th>
+                           <th scope="col">Ratings</th>
+                           <th scope="col">Points</th>
+                           <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody id="MainContent_rubricTB">
+                        <tr>
+                           <th scope="row" style="font-size:13px;">Quality of animation</th>
+                           <td>
+                              <table class="table table-bordered">
+                                 <tbody>
+                                    <tr>
+                                       <td style="font-size:11px;">Animation quality is of a poor standard.</td>
+                                       <td style="font-size:11px;">Animation potential is not fully taken advantage of. Some movements are minimal
+                                          and in areas not convincing.
+                                       </td>
+                                       <td style="font-size:11px;">Animation is very consistent and well done. It is an acceptable standard. There may be some style breaking with the use of a shortcut.</td>
+                                       <td style="font-size:11px;">Animation is of a high standard. Very solid use of principles. A great example of animation well done.</td>
+                                       <td style="font-size:11px;">Animation is of a very high standard. There are many uses of principles throughout. It has a very strong artistic flair and imitates life brilliantly.</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                           <td style="font-size:11px;">40.0</td>
+                           <td><a href="update-criteria.html" class="btn btn-secondary">Edit</a></td>
+                        </tr>
+                        <tr>
+                           <th scope="row" style="font-size:13px;">Impact of Directing and Storytelling</th>
+                           <td>
+                              <table class="table table-bordered">
+                                 <tbody>
+                                    <tr>
+                                       <td style="font-size:11px;">The animation is not very coherent in its storytelling. It has major problems with its choice of shots/editing.</td>
+                                       <td style="font-size:11px;">There are problems with the way information is revealed in the animation, it might be hard to follow or contain confusing elements.</td>
+                                       <td style="font-size:11px;">The story is understandable. There may be a moment that could have been better explained, a scene added or cut out. Overall works well.</td>
+                                       <td style="font-size:11px;">The story is delivered successfully and the use of camera angles and direction is effective.</td>
+                                       <td style="font-size:11px;">The story and direction delivers an impact quite nicely! The narrative is delivered in a captivating way.</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                           <td style="font-size:11px;">30.0</td>
+                           <td><a href="update-criteria.html" class="btn btn-secondary">Edit</a></td>
+                        </tr>
+                        <tr>
+                           <th scope="row" style="font-size:13px;">Aesthetic Strength of cinematography</th>
+                           <td>
+                              <table class="table table-bordered">
+                                 <tbody>
+                                    <tr>
+                                       <td style="font-size:11px;">The aesthetic is very bland or non-existent and the care taken in drawing is really poor</td>
+                                       <td style="font-size:11px;">The animation appears very uninteresting and not charismatic, or too derivative from something else.</td>
+                                       <td style="font-size:11px;">Drawing style is consistent and complete. The final output may look flat or ordinary, in need of some polish.</td>
+                                       <td style="font-size:11px;">The look of the film is fair. There was definitely thought put into the art direction. It could be taken further though.</td>
+                                       <td style="font-size:11px;">Definite artistic flair lent to the final colour grading of the movie. Evidence of VFX and care taken in set painting.</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                           <td style="font-size:11px;">30.0</td>
+                           <td><a href="update-criteria.html" class="btn btn-secondary">Edit</a></td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <a href="add-criteria.html" class="btn btn-secondary btn btn-secondary btn-block">New Criteria</a>
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+            <div class="col-4 right-panel">
+              <h5>Notifications</h5>
+              <div class="line">
+                <p>
+                  <b>New event has been created</b>
+                </p>
+                <small>2 min ago</small>
+              </div>
+              <div class="line">
+                <p>
+                  Keving has been granted as a judge
+                </p>
+                <small>2 min ago</small>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+   
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover({
+            html: true
+          })
+      })
+    </script>
+  </body>
+</html>

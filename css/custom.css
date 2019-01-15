@@ -384,6 +384,14 @@ a {
   background: #e3f1f7;
   
 }
+.delete-rating{
+  background: #bdb7b7;
+  width: 20px;
+  height: 20px;
+  display: block;
+  text-align: center;
+}
+
 #ddlCategories{
   height: 40px;
 }
